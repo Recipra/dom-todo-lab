@@ -27,4 +27,5 @@ todoList.addEventListener('click', onClick)
 
 function onClick(event) {
   event.target.hidden = true
+  console.log(event)
 }

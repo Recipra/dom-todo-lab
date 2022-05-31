@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* 
+h1 {
+  text-align: center;
+}
+
+div {
+  display: inline-block;
+}
+
+ul {
+  list-style-position: inside;
+  text-align: center;
+  align-items: center;
+} */
