@@ -22,3 +22,9 @@ resetButton.addEventListener('click', function() {
   todoItem.value = ''
   todoList.textContent = ''
 })
+
+todoList.addEventListener('click', onClick)
+
+function onClick(event) {
+  event.target.hidden = true
+}
