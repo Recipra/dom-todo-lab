@@ -1,6 +1,7 @@
 const form = document.querySelector('form')
 const todoItem = document.getElementById('todo-item')
 const addButton = document.getElementById('submit-button')
+const resetButton = document.getElementById('reset-button')
 const todoList = document.getElementById('todo-list')
 
 form.addEventListener('submit', event => {
@@ -15,4 +16,9 @@ addButton.addEventListener('click', event => {
     todoList.appendChild(li)
     todoItem.value = ''
   }
+})
+
+resetButton.addEventListener('click', function() {
+  todoItem.value = ''
+  todoList.textContent = ''
 })
