@@ -10,6 +10,9 @@ form.addEventListener('submit', event => {
 addButton.addEventListener('click', event => {
   const li = document.createElement('li')
   li.textContent = todoItem.value
-  todoList.appendChild(li)
-  todoItem.value = ''
+  if (todoItem.value.length === 0) return
+  else {
+    todoList.appendChild(li)
+    todoItem.value = ''
+  }
 })
